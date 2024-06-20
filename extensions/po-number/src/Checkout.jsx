@@ -12,8 +12,8 @@ export default reactExtension("purchase.checkout.block.render", () => <App />);
 
 function App() {
   // Define the metafield namespace and key
-  const METAFIELDNAMESPACE = "planted";
-  const METAFIELDKEY = "po_number";
+  const METAFIELDNAMESPACE = "";
+  const METAFIELDKEY = "";
 
   // Get a reference to the metafield
   const poNumber = useMetafield({
@@ -28,7 +28,7 @@ function App() {
   return (
     <BlockStack>
         <TextField
-          label="Interne Referenznummer / Kundennummer"
+          label="PO Number"
           onChange={(value) => {
             // Apply the change to the metafield
             applyMetafieldsChange({

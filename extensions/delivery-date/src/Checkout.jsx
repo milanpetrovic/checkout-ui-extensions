@@ -34,8 +34,8 @@ function getNextAvailableDate(disabledDateRanges) {
 
 function App() {
   // Define the metafield namespace and key
-  const METAFIELDNAMESPACE = "planted";
-  const METAFIELDKEY = "requested_delivery_date";
+  const METAFIELDNAMESPACE = "";
+  const METAFIELDKEY = "";
 
   // Get a reference to the metafield
   const deliveryDate = useMetafield({
